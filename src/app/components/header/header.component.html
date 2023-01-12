@@ -1,19 +1,36 @@
+<header>
+    <nav class="w-full top-0 text-white bg-gradient-to-r from-blue-800 to-blue-600">
 
-    <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-            <a class="flex items-center">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkrpCoFcnzTDaQ0vtuqE5QwCV3h-ZrjYxgnlgWN9KY5A&s" class="mr-3 h-6 sm:h-9" alt="Angular Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Certus</span>
-            </a>
-            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
-                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                    <li class="mx-1">
-                        <a class="bg-blue-200 px-4 py-2 rounded-lg" routerLink="/" routerLinkActive="bg-blue-700" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" >Home</a>
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+
+            <div class="pl-4 flex items-center">
+                <a class="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-white flex items-center" href="/">
+                    <img src="data:image/png;base64,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" class="mr-3 h-6 sm:h-9" alt="FCertus Logo"/> 
+                    <span class="self-center">CERTUS</span>
+                </a>
+            </div>
+
+            <div class="block lg:hidden pr-4">
+                <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 hidden bg-gray-100" id="nav-content">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 text-white font-bold no-underline" routerLink="/" routerLinkActive="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 bg-white text-gray-800" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Home</a>
                     </li>
-                    <li class="mx-1">
-                        <a class="bg-blue-200 px-4 py-2 rounded-lg"  routerLink="/login" routerLinkActive="bg-blue-700" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" >Login</a>
+                    <li class="mr-3">
+                        <a class="inline-block py-2 px-4 text-white font-bold no-underline" routerLink="/login" routerLinkActive="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 bg-white text-gray-800" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Login</a>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <hr class="border-b border-gray-100 opacity-25 my-0 py-0">
     </nav>
+</header>

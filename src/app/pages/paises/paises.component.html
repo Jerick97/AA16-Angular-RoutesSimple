@@ -1,0 +1,38 @@
+<div class="grid grid-flow-col auto-cols-max">
+    <div class="w-80 bg-gray-100 rounded-r-3xl overflow-hidden">
+      <div class="flex items-center justify-center h-20 shadow-md">
+        <h1 class="uppercase text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">Menú</h1>
+      </div>
+      <ul class="py-4">
+        <li>
+          <a routerLink="/paises/" routerLinkActive="text-blue-500 bg-blue-100 hover:text-blue-600" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 hover:text-blue-500 hover:bg-blue-100 hover:text-blue-600">
+            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bi bi-flag-fill"></i></span>
+            <span class="text-sm font-medium">Chile</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/paises/peru" routerLinkActive="text-red-500 bg-red-100 hover:text-red-600" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 hover:text-red-500 hover:bg-red-100 hover:text-red-600">
+            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bi bi-flag-fill"></i></span>
+            <span class="text-sm font-medium">Perú</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/paises/uruguay" routerLinkActive="text-yellow-500 bg-yellow-100 hover:text-yellow-600" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 hover:text-yellow-500 hover:bg-yellow-100 hover:text-yellow-600">
+            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bi bi-flag-fill"></i></span>
+            <span class="text-sm font-medium">Uruguay</span>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/paises/argentina" routerLinkActive="text-sky-500 bg-sky-100 hover:text-sky-600" [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page" class="flex flex-row items-center h-12 transform hover:translate-x-2 transition-transform ease-in duration-200 hover:text-sky-500 hover:bg-sky-100 hover:text-sky-600">
+            <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bi bi-flag-fill"></i></span>
+            <span class="text-sm font-medium">Argentina</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="">
+        <router-outlet></router-outlet>
+    </div>
+  </div>
+
+ 
